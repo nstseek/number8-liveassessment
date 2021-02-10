@@ -1,0 +1,19 @@
+div.Toaster {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  div.content {
+    background-color: rgba(145, 213, 104, 0.7);
+    width: 75vw;
+    padding: 34px;
+    display: flex;
+    border: 1px solid gray;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}

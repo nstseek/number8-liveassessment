@@ -1,0 +1,114 @@
+div.Item {
+  display: flex;
+  width: 100%;
+  padding: 34px 0;
+  div.picture-info {
+    div.picture {
+      display: flex;
+      align-items: flex-end;
+      width: 350px;
+      height: 350px;
+      justify-content: space-between;
+      padding: 21px;
+      margin-bottom: 34px;
+      div.tag {
+        padding: 8px 13px;
+        background-color: #ff460f;
+        color: white;
+        border: 1px solid gray;
+        font-size: 1.1rem;
+      }
+    }
+    p.info {
+      font-size: 1.1rem;
+      margin: 8px 0;
+      span.title {
+        font-weight: 600;
+      }
+    }
+  }
+  div.info {
+    display: flex;
+    flex: 1;
+    padding: 34px;
+    flex-direction: column;
+    h2.title {
+      margin: 8px;
+    }
+    img {
+      width: 100px;
+    }
+  }
+  div.actions {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    div.price {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 200px;
+      span.actual-price {
+        font-size: 2.3rem;
+        font-weight: 500;
+      }
+      span.old-price {
+        font-size: 1.6rem;
+        text-decoration: line-through;
+        margin-left: 13px;
+      }
+    }
+    div.add-cart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      span.warning {
+        text-align: center;
+        color: red;
+        font-size: 1.3rem;
+        margin-bottom: 13px;
+      }
+      button.add-to-cart {
+        background-color: #91d568;
+        padding: 16px;
+        width: 200px;
+        color: white;
+        font-weight: 600;
+        border: 1px solid #555;
+        border-radius: 13px;
+        font-size: 1.2rem;
+        transition: 0.2s all ease-in-out;
+        &:not([disabled]) {
+          cursor: pointer;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            filter: brightness(0.9);
+          }
+          &:active {
+            filter: brightness(0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.Item {
+    flex-direction: column;
+    align-items: center;
+    div.picture-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div.picture {
+        margin: 8px 0;
+      }
+    }
+  }
+}
